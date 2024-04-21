@@ -21,7 +21,7 @@ spec:
               service:
                 name: {{ .Release.Name }}
                 port:
-                  number: {{ .Values.service.nodePort }}
+                  number: {{ .Values.service.targetPort }}
   tls:
     - hosts:
         - cv.phan
